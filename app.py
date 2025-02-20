@@ -3,6 +3,9 @@ import pickle
 import nltk
 from nltk.corpus import stopwords
 
+nltk.download('stopwords')
+nltk.download('punkt_tab')
+
 def get_stopwords(text):
     stop_words = set(stopwords.words('english'))
     words = nltk.word_tokenize(text)
